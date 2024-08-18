@@ -1,0 +1,196 @@
+/* Fondo de la página */
+body {
+    background: linear-gradient(to right, #d77e7e, #ead7d7);
+    background-size: cover;
+}
+
+/* Barra de búsqueda */
+.navbar-custom {
+    background: linear-gradient(to right, #d77e7e, #ead7d7);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* Botón Drop Down */
+.btn-custom {
+    background: linear-gradient(to right, #ead7d7, #d77e7e); 
+    border: none;
+    color: #000;
+}
+
+.dropdown-item {
+    background: linear-gradient(to right, #ead7d7, #d77e7d); 
+    border: none; 
+    color: #000;
+}
+
+/* Cambia el color del texto del botón al pasar el mouse */
+.btn-custom:hover {
+    background: linear-gradient(to right, #945f5f, #b78888);
+    color: #fff; 
+}
+
+/* Barra color de letras */
+.navbar .nav-link {
+    color: #f8f8f8; 
+}
+
+.navbar .nav-link:hover {
+    color: #85353d; 
+}
+
+/* Estilos para el contenedor de cards en la sección específica */
+#who-is-lana .custom-card {
+    background: radial-gradient(circle, #d77e7e, #ead7d7); 
+    border: none;
+    height: 100%;
+}
+
+#who-is-lana .custom-card img {
+    height: 300px; /* Ajusta la altura según sea necesario */
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.custom-card .card-title:hover,
+.custom-card .card-text:hover,
+.custom-card small:hover {
+    color: #fff; /* Cambia el color del texto a blanco al pasar el mouse */
+}
+
+
+#who-is-lana .custom-card .card-body {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* Responsividad para la card en pantallas pequeñas */
+@media (max-width: 768px) {
+    #who-is-lana .custom-card {
+        width: 100%; /* Ocupa todo el ancho del contenedor */
+    }
+
+    #who-is-lana .custom-card img {
+        height: auto; /* Ajusta la altura de la imagen */
+    }
+}
+
+/* Estilos para la sección de álbumes */
+.albums-section h1 {
+    font-family: 'Felix Titling', cursive;
+    text-decoration: dotted;
+    font-size: 5rem;
+}
+
+.albums-section .card {
+    background: radial-gradient(circle, #d77e7e, #ead7d7);
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    transition: box-shadow 0.3s ease;
+    position: relative;
+}
+
+.albums-section .card-img-top {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.albums-section .card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+.albums-section small,
+.albums-section .card-title,
+.albums-section .card-text {
+    font-family: 'Times New Roman', serif;
+}
+
+.albums-section small {
+    font-size: 1rem;
+}
+
+.albums-section .card-title {
+    font-size: 1rem;
+    color: #333;
+    transition: color 0.3s ease;
+    text-decoration: underline;
+    font-style: italic;
+}
+
+.albums-section .card-text {
+    font-size: 0.8rem;
+    color: #666;
+    transition: color 0.3s ease;
+    text-align: justify;
+}
+
+/* Hover effect */
+.albums-section .card-title:hover,
+.albums-section .card-text:hover {
+    color: #fff;
+}
+
+/* Asegura que todas las cards tengan la misma altura */
+.albums-section .card {
+    height: 100%;
+}
+
+.albums-section .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+/* Estilos del carousel */
+.carousel-inner img {
+    width: 100%;
+    height: 700px; 
+    object-fit: cover;
+}
+
+.carousel-container {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.carousel-caption {
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.carousel-caption:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+}
+
+.carousel-caption h5,
+.carousel-caption p {
+    transition: color 0.3s;
+}
+
+.carousel-caption:hover h5,
+.carousel-caption:hover p {
+    color: #f0f0f0;
+}
+
+/* Estilos del footer */
+#footer {
+    background: linear-gradient(to right, #f7a7a7, #b78888);
+    color: #fff;
+    padding: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#footer a {
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    line-height: 95px;
+}
+
+.footer-icon {
+    width: 80px;
+    height: auto;
+    margin: 0 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
